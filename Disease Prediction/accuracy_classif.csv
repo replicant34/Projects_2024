@@ -1,0 +1,228 @@
+Dataset,Model,Train accuracy,Test accuracy,Precision,Recall,F1,Best estimator,Best parameters
+Disease,Logistic Regression,0.25942857142857145,0.242,0.11319065656565656,0.242,0.10638940981798126,"LogisticRegression(C=0.01, penalty='l1', solver='saga')","{'C': 0.01, 'penalty': 'l1', 'solver': 'saga'}"
+Disease,Decision Tree,0.5951428571428572,0.2713333333333333,0.27607295531677634,0.2713333333333333,0.2707078987894404,"DecisionTreeClassifier(criterion='entropy', max_depth=15, min_samples_leaf=4,
+                       min_samples_split=10)","{'criterion': 'entropy', 'max_depth': 15, 'min_samples_leaf': 4, 'min_samples_split': 10}"
+Disease,Random Forest,0.8348571428571429,0.25266666666666665,0.25530894456719994,0.25266666666666665,0.25200793929634996,"RandomForestClassifier(max_depth=10, min_samples_leaf=4, min_samples_split=10)","{'criterion': 'gini', 'max_depth': 10, 'min_samples_leaf': 4, 'min_samples_split': 10, 'n_estimators': 100}"
+Disease,Gradient Boosting,0.9994285714285714,0.25066666666666665,0.2527788741282868,0.25066666666666665,0.25112423031756653,"GradientBoostingClassifier(max_depth=7, n_estimators=200)","{'max_depth': 7, 'n_estimators': 200}"
+Disease,KNN,0.5054285714285714,0.24133333333333334,0.2428020945505345,0.24133333333333334,0.2382148576259211,KNeighborsClassifier(p=1),"{'n_neighbors': 5, 'p': 1, 'weights': 'uniform'}"
+Disease,MLP,0.35085714285714287,0.23933333333333334,0.23876148896072497,0.23933333333333334,0.2386872363714577,"MLPClassifier(activation='logistic', alpha=0.001, solver='lbfgs')","{'activation': 'logistic', 'alpha': 0.001, 'solver': 'lbfgs'}"
+Disease,SVC,0.2702857142857143,0.23733333333333334,0.11360673844618456,0.23733333333333334,0.15327655617413383,SVC(C=0.1),"{'C': 0.1, 'gamma': 'scale', 'kernel': 'rbf'}"
+Disease,XGBoost,0.9997142857142857,0.26266666666666666,0.26466177600086904,0.26266666666666666,0.26323461287616595,"XGBClassifier(base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device=None, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=0.3, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=7, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=300, n_jobs=None,
+              num_parallel_tree=None, objective='multi:softprob', ...)","{'learning_rate': 0.3, 'max_depth': 7, 'n_estimators': 300}"
+HealthIns,Logistic Regression,0.5005714285714286,0.5026666666666667,0.2526737777777778,0.5026666666666667,0.33630050280981955,"LogisticRegression(C=0.01, penalty='l1', solver='saga')","{'C': 0.01, 'penalty': 'l1', 'solver': 'saga'}"
+HealthIns,Decision Tree,0.9105714285714286,0.49866666666666665,0.4988193736257205,0.49866666666666665,0.4983135245901639,DecisionTreeClassifier(max_depth=15),"{'criterion': 'gini', 'max_depth': 15, 'min_samples_leaf': 1, 'min_samples_split': 2}"
+HealthIns,Random Forest,0.9182857142857143,0.5073333333333333,0.5072316707982034,0.5073333333333333,0.5070368549421442,"RandomForestClassifier(max_depth=10, min_samples_leaf=2, min_samples_split=5)","{'criterion': 'gini', 'max_depth': 10, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 100}"
+HealthIns,Gradient Boosting,0.9171428571428571,0.5033333333333333,0.5032749586787152,0.5033333333333333,0.5032394924516069,"GradientBoostingClassifier(max_depth=5, n_estimators=300)","{'max_depth': 5, 'n_estimators': 300}"
+HealthIns,KNN,1.0,0.5033333333333333,0.5032816557233472,0.5033333333333333,0.5032571598685499,"KNeighborsClassifier(p=1, weights='distance')","{'n_neighbors': 5, 'p': 1, 'weights': 'distance'}"
+HealthIns,MLP,0.6557142857142857,0.504,0.5038819040827242,0.504,0.5036505152878209,"MLPClassifier(activation='logistic', alpha=0.001, solver='lbfgs')","{'activation': 'logistic', 'alpha': 0.001, 'solver': 'lbfgs'}"
+HealthIns,SVC,0.5545714285714286,0.492,0.49069285076438124,0.492,0.4831732126696832,"SVC(C=0.1, gamma='auto')","{'C': 0.1, 'gamma': 'auto', 'kernel': 'rbf'}"
+HealthIns,XGBoost,0.9905714285714285,0.51,0.5099458597762868,0.51,0.5099074187274243,"XGBClassifier(base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device=None, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=0.3, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=7, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=100, n_jobs=None,
+              num_parallel_tree=None, random_state=None, ...)","{'learning_rate': 0.3, 'max_depth': 7, 'n_estimators': 100}"
+StressLevel,Logistic Regression,0.3457142857142857,0.324,0.104976,0.324,0.1585740181268882,"LogisticRegression(C=0.01, penalty='l1', solver='saga')","{'C': 0.01, 'penalty': 'l1', 'solver': 'saga'}"
+StressLevel,Decision Tree,0.6568571428571428,0.32133333333333336,0.32394269570394285,0.32133333333333336,0.32005935754252923,"DecisionTreeClassifier(criterion='entropy', max_depth=15, min_samples_leaf=4,
+                       min_samples_split=10)","{'criterion': 'entropy', 'max_depth': 15, 'min_samples_leaf': 4, 'min_samples_split': 10}"
+StressLevel,Random Forest,0.8637142857142858,0.3426666666666667,0.34705414636575466,0.3426666666666667,0.3412994586190692,"RandomForestClassifier(criterion='entropy', max_depth=10, min_samples_leaf=2,
+                       min_samples_split=10)","{'criterion': 'entropy', 'max_depth': 10, 'min_samples_leaf': 2, 'min_samples_split': 10, 'n_estimators': 100}"
+StressLevel,Gradient Boosting,0.9997142857142857,0.3486666666666667,0.3490421059592791,0.3486666666666667,0.34842738788168254,"GradientBoostingClassifier(max_depth=7, n_estimators=300)","{'max_depth': 7, 'n_estimators': 300}"
+StressLevel,KNN,0.5225714285714286,0.35,0.35039950776486284,0.35,0.34610676749336516,"KNeighborsClassifier(n_neighbors=7, p=1)","{'n_neighbors': 7, 'p': 1, 'weights': 'uniform'}"
+StressLevel,MLP,0.4377142857142857,0.3453333333333333,0.3457658341298062,0.3453333333333333,0.3444367128666064,"MLPClassifier(activation='logistic', alpha=0.001, solver='lbfgs')","{'activation': 'logistic', 'alpha': 0.001, 'solver': 'lbfgs'}"
+StressLevel,SVC,0.36228571428571427,0.3313333333333333,0.3436053592647476,0.3313333333333333,0.19377781395950774,"SVC(C=0.1, gamma='auto')","{'C': 0.1, 'gamma': 'auto', 'kernel': 'rbf'}"
+StressLevel,XGBoost,0.676,0.3373333333333333,0.33719870771364663,0.3373333333333333,0.33656354050193577,"XGBClassifier(base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device=None, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=0.01, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=7, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=200, n_jobs=None,
+              num_parallel_tree=None, objective='multi:softprob', ...)","{'learning_rate': 0.01, 'max_depth': 7, 'n_estimators': 200}"
+MedicalHistoryScore,Logistic Regression,0.12885714285714286,0.11066666666666666,0.10731452768459993,0.11066666666666666,0.0702946328857959,"LogisticRegression(C=0.1, penalty='l1', solver='saga')","{'C': 0.1, 'penalty': 'l1', 'solver': 'saga'}"
+MedicalHistoryScore,Decision Tree,0.15828571428571428,0.108,0.09223282296180924,0.108,0.06924519138308172,"DecisionTreeClassifier(max_depth=5, min_samples_leaf=4)","{'criterion': 'gini', 'max_depth': 5, 'min_samples_leaf': 4, 'min_samples_split': 2}"
+MedicalHistoryScore,Random Forest,0.31514285714285717,0.10133333333333333,0.0786226259762396,0.10133333333333333,0.06521581266125363,"RandomForestClassifier(max_depth=5, min_samples_leaf=4, min_samples_split=5,
+                       n_estimators=200)","{'criterion': 'gini', 'max_depth': 5, 'min_samples_leaf': 4, 'min_samples_split': 5, 'n_estimators': 200}"
+MedicalHistoryScore,Gradient Boosting,0.9451428571428572,0.09866666666666667,0.09836547328583996,0.09866666666666667,0.09775613625038537,"GradientBoostingClassifier(max_depth=5, n_estimators=200)","{'max_depth': 5, 'n_estimators': 200}"
+MedicalHistoryScore,KNN,0.9988571428571429,0.08866666666666667,0.08595992959263159,0.08866666666666667,0.08488980448262784,"KNeighborsClassifier(n_neighbors=3, weights='distance')","{'n_neighbors': 3, 'p': 2, 'weights': 'distance'}"
+MedicalHistoryScore,MLP,0.21657142857142858,0.11066666666666666,0.11318781378429965,0.11066666666666666,0.11008801130195849,"MLPClassifier(activation='logistic', alpha=0.01, solver='lbfgs')","{'activation': 'logistic', 'alpha': 0.01, 'solver': 'lbfgs'}"
+MedicalHistoryScore,SVC,0.12457142857142857,0.09866666666666667,0.01950805052730156,0.09866666666666667,0.03043542319749216,"SVC(C=0.1, gamma='auto')","{'C': 0.1, 'gamma': 'auto', 'kernel': 'rbf'}"
+MedicalHistoryScore,XGBoost,0.9557142857142857,0.10733333333333334,0.1066617286183418,0.10733333333333334,0.10613112883611867,"XGBClassifier(base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device=None, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=0.3, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=5, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=200, n_jobs=None,
+              num_parallel_tree=None, objective='multi:softprob', ...)","{'learning_rate': 0.3, 'max_depth': 5, 'n_estimators': 200}"
+PhysicalActivity,Logistic Regression,0.3537142857142857,0.34,0.11560000000000001,0.34,0.17253731343283585,"LogisticRegression(C=0.01, penalty='l1', solver='saga')","{'C': 0.01, 'penalty': 'l1', 'solver': 'saga'}"
+PhysicalActivity,Decision Tree,0.39685714285714285,0.344,0.34036013089345724,0.344,0.32314677693519517,"DecisionTreeClassifier(max_depth=5, min_samples_leaf=4)","{'criterion': 'gini', 'max_depth': 5, 'min_samples_leaf': 4, 'min_samples_split': 2}"
+PhysicalActivity,Random Forest,0.478,0.342,0.3429487094546492,0.342,0.28057211801771337,"RandomForestClassifier(criterion='entropy', max_depth=5, min_samples_leaf=4,
+                       min_samples_split=5)","{'criterion': 'entropy', 'max_depth': 5, 'min_samples_leaf': 4, 'min_samples_split': 5, 'n_estimators': 100}"
+PhysicalActivity,Gradient Boosting,0.8728571428571429,0.3373333333333333,0.339822178057973,0.3373333333333333,0.33740693744472827,"GradientBoostingClassifier(max_depth=5, n_estimators=200)","{'max_depth': 5, 'n_estimators': 200}"
+PhysicalActivity,KNN,0.5571428571428572,0.3486666666666667,0.3514060438337999,0.3486666666666667,0.34420638001613424,KNeighborsClassifier(p=1),"{'n_neighbors': 5, 'p': 1, 'weights': 'uniform'}"
+PhysicalActivity,MLP,0.37457142857142856,0.3546666666666667,0.35632350695022463,0.3546666666666667,0.3501292756367164,"MLPClassifier(activation='logistic', alpha=0.001)","{'activation': 'logistic', 'alpha': 0.001, 'solver': 'adam'}"
+PhysicalActivity,SVC,0.3545714285714286,0.3406666666666667,0.2167205522155422,0.3406666666666667,0.17411979733950866,"SVC(C=0.1, gamma='auto')","{'C': 0.1, 'gamma': 'auto', 'kernel': 'rbf'}"
+PhysicalActivity,XGBoost,0.8254285714285714,0.3293333333333333,0.33228872053872055,0.3293333333333333,0.3287854832941982,"XGBClassifier(base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device=None, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=0.1, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=5, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=300, n_jobs=None,
+              num_parallel_tree=None, objective='multi:softprob', ...)","{'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 300}"
+Smoker,Logistic Regression,0.5411428571428571,0.5153333333333333,0.5144567333277845,0.5153333333333333,0.5079416449100916,"LogisticRegression(C=1, penalty='l1', solver='saga')","{'C': 1, 'penalty': 'l1', 'solver': 'saga'}"
+Smoker,Decision Tree,0.8274285714285714,0.5113333333333333,0.5121694663123235,0.5113333333333333,0.5104689430790115,"DecisionTreeClassifier(max_depth=15, min_samples_leaf=2)","{'criterion': 'gini', 'max_depth': 15, 'min_samples_leaf': 2, 'min_samples_split': 2}"
+Smoker,Random Forest,0.6345714285714286,0.5273333333333333,0.5281063040392309,0.5273333333333333,0.5129115713547256,"RandomForestClassifier(criterion='entropy', max_depth=5, min_samples_leaf=2,
+                       min_samples_split=10)","{'criterion': 'entropy', 'max_depth': 5, 'min_samples_leaf': 2, 'min_samples_split': 10, 'n_estimators': 100}"
+Smoker,Gradient Boosting,0.9945714285714286,0.5086666666666667,0.5087543899571435,0.5086666666666667,0.508692217919183,"GradientBoostingClassifier(max_depth=7, n_estimators=200)","{'max_depth': 7, 'n_estimators': 200}"
+Smoker,KNN,0.7588571428571429,0.49266666666666664,0.4924310986964618,0.49266666666666664,0.4924330831081306,KNeighborsClassifier(n_neighbors=3),"{'n_neighbors': 3, 'p': 2, 'weights': 'uniform'}"
+Smoker,MLP,0.5411428571428571,0.5153333333333333,0.5144555222161605,0.5153333333333333,0.5077768249478826,"MLPClassifier(activation='logistic', alpha=0.01)","{'activation': 'logistic', 'alpha': 0.01, 'solver': 'adam'}"
+Smoker,SVC,0.5414285714285715,0.5113333333333333,0.5101698006481992,0.5113333333333333,0.5026770332546351,"SVC(C=0.1, kernel='linear')","{'C': 0.1, 'gamma': 'scale', 'kernel': 'linear'}"
+Smoker,XGBoost,0.54,0.514,0.5173585703090013,0.514,0.4454826641707844,"XGBClassifier(base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device=None, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=0.01, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=3, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=100, n_jobs=None,
+              num_parallel_tree=None, random_state=None, ...)","{'learning_rate': 0.01, 'max_depth': 3, 'n_estimators': 100}"
+pca_Disease,Logistic Regression,0.26285714285714284,0.23933333333333334,0.16414416380098168,0.23933333333333334,0.1607664499402144,"LogisticRegression(C=0.1, penalty='l1', solver='saga')","{'C': 0.1, 'penalty': 'l1', 'solver': 'saga'}"
+pca_Disease,Decision Tree,0.2914285714285714,0.24666666666666667,0.25111037361956545,0.24666666666666667,0.22432601405311342,"DecisionTreeClassifier(criterion='entropy', max_depth=5, min_samples_leaf=2)","{'criterion': 'entropy', 'max_depth': 5, 'min_samples_leaf': 2, 'min_samples_split': 2}"
+pca_Disease,Random Forest,0.36657142857142855,0.24333333333333335,0.24673957873380012,0.24333333333333335,0.22629543615482478,"RandomForestClassifier(max_depth=5, min_samples_leaf=2, min_samples_split=10)","{'criterion': 'gini', 'max_depth': 5, 'min_samples_leaf': 2, 'min_samples_split': 10, 'n_estimators': 100}"
+pca_Disease,Gradient Boosting,0.9082857142857143,0.23733333333333334,0.23901278973851997,0.23733333333333334,0.23737969508877163,"GradientBoostingClassifier(max_depth=5, n_estimators=300)","{'max_depth': 5, 'n_estimators': 300}"
+pca_Disease,KNN,0.9997142857142857,0.22333333333333333,0.22415773183698587,0.22333333333333333,0.2234415342062997,"KNeighborsClassifier(n_neighbors=3, weights='distance')","{'n_neighbors': 3, 'p': 2, 'weights': 'distance'}"
+pca_Disease,MLP,0.26257142857142857,0.24,0.1683938092682054,0.24,0.16112416505259428,"MLPClassifier(activation='identity', alpha=0.001, solver='lbfgs')","{'activation': 'identity', 'alpha': 0.001, 'solver': 'lbfgs'}"
+pca_Disease,SVC,0.27914285714285714,0.242,0.1789837232997197,0.242,0.18595229034476138,SVC(C=0.1),"{'C': 0.1, 'gamma': 'scale', 'kernel': 'rbf'}"
+pca_Disease,XGBoost,0.4725714285714286,0.25533333333333336,0.2555042979957454,0.25533333333333336,0.2546860525876227,"XGBClassifier(base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device=None, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=0.3, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=3, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=200, n_jobs=None,
+              num_parallel_tree=None, objective='multi:softprob', ...)","{'learning_rate': 0.3, 'max_depth': 3, 'n_estimators': 200}"
+pca_HealthIns,Logistic Regression,0.49942857142857144,0.49733333333333335,0.24734044444444445,0.49733333333333335,0.33037459186702284,"LogisticRegression(C=0.01, penalty='l1', solver='saga')","{'C': 0.01, 'penalty': 'l1', 'solver': 'saga'}"
+pca_HealthIns,Decision Tree,0.5485714285714286,0.5013333333333333,0.5010745789126656,0.5013333333333333,0.4999139987445072,"DecisionTreeClassifier(criterion='entropy', max_depth=5, min_samples_split=5)","{'criterion': 'entropy', 'max_depth': 5, 'min_samples_leaf': 1, 'min_samples_split': 5}"
+pca_HealthIns,Random Forest,0.6048571428571429,0.48,0.4799398730491498,0.48,0.47698395817507483,"RandomForestClassifier(max_depth=5, min_samples_leaf=4, min_samples_split=10,
+                       n_estimators=200)","{'criterion': 'gini', 'max_depth': 5, 'min_samples_leaf': 4, 'min_samples_split': 10, 'n_estimators': 200}"
+pca_HealthIns,Gradient Boosting,0.8951428571428571,0.5033333333333333,0.50345652195846,0.5033333333333333,0.5031511716217468,"GradientBoostingClassifier(max_depth=5, n_estimators=300)","{'max_depth': 5, 'n_estimators': 300}"
+pca_HealthIns,KNN,0.7554285714285714,0.4713333333333333,0.4713508563274483,0.4713333333333333,0.4713368577918756,"KNeighborsClassifier(n_neighbors=3, p=1)","{'n_neighbors': 3, 'p': 1, 'weights': 'uniform'}"
+pca_HealthIns,MLP,0.494,0.52,0.5201345617132769,0.52,0.519859169705839,"MLPClassifier(activation='logistic', alpha=0.001, solver='lbfgs')","{'activation': 'logistic', 'alpha': 0.001, 'solver': 'lbfgs'}"
+pca_HealthIns,SVC,0.5268571428571428,0.486,0.4842464965027087,0.486,0.47697591825485075,SVC(C=0.1),"{'C': 0.1, 'gamma': 'scale', 'kernel': 'rbf'}"
+pca_HealthIns,XGBoost,0.6174285714285714,0.48533333333333334,0.4854337254901961,0.48533333333333334,0.48304019307528084,"XGBClassifier(base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device=None, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=0.01, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=7, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=100, n_jobs=None,
+              num_parallel_tree=None, random_state=None, ...)","{'learning_rate': 0.01, 'max_depth': 7, 'n_estimators': 100}"
+pca_StressLevel,Logistic Regression,0.3457142857142857,0.324,0.104976,0.324,0.1585740181268882,"LogisticRegression(C=0.01, penalty='l1', solver='saga')","{'C': 0.01, 'penalty': 'l1', 'solver': 'saga'}"
+pca_StressLevel,Decision Tree,0.4005714285714286,0.326,0.34539724210381906,0.326,0.21371398440853143,"DecisionTreeClassifier(max_depth=10, min_samples_leaf=2)","{'criterion': 'gini', 'max_depth': 10, 'min_samples_leaf': 2, 'min_samples_split': 2}"
+pca_StressLevel,Random Forest,0.43914285714285717,0.3293333333333333,0.3402438896883081,0.3293333333333333,0.26619061272293654,"RandomForestClassifier(criterion='entropy', max_depth=5, min_samples_leaf=2,
+                       min_samples_split=5, n_estimators=200)","{'criterion': 'entropy', 'max_depth': 5, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}"
+pca_StressLevel,Gradient Boosting,0.9045714285714286,0.34,0.3418915023833584,0.34,0.3388102243968444,"GradientBoostingClassifier(max_depth=5, n_estimators=300)","{'max_depth': 5, 'n_estimators': 300}"
+pca_StressLevel,KNN,0.5562857142857143,0.314,0.3174341491841492,0.314,0.30769362876479717,KNeighborsClassifier(),"{'n_neighbors': 5, 'p': 2, 'weights': 'uniform'}"
+pca_StressLevel,MLP,0.34914285714285714,0.322,0.2223427383220665,0.322,0.18702263393546395,"MLPClassifier(activation='identity', alpha=0.001, solver='lbfgs')","{'activation': 'identity', 'alpha': 0.001, 'solver': 'lbfgs'}"
+pca_StressLevel,SVC,0.3565714285714286,0.32466666666666666,0.21955446853697808,0.32466666666666666,0.21370283927993167,SVC(C=0.1),"{'C': 0.1, 'gamma': 'scale', 'kernel': 'rbf'}"
+pca_StressLevel,XGBoost,0.5291428571428571,0.31733333333333336,0.32102440619044953,0.31733333333333336,0.30660737720990616,"XGBClassifier(base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device=None, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=0.01, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=7, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=300, n_jobs=None,
+              num_parallel_tree=None, objective='multi:softprob', ...)","{'learning_rate': 0.01, 'max_depth': 7, 'n_estimators': 300}"
+pca_MedicalHistoryScore,Logistic Regression,0.11542857142857142,0.09,0.027830238259195037,0.09,0.03424601791886025,"LogisticRegression(C=0.1, penalty='l1', solver='saga')","{'C': 0.1, 'penalty': 'l1', 'solver': 'saga'}"
+pca_MedicalHistoryScore,Decision Tree,0.19257142857142856,0.098,0.09351654817710976,0.098,0.05094057924499699,"DecisionTreeClassifier(criterion='entropy', max_depth=15, min_samples_leaf=4)","{'criterion': 'entropy', 'max_depth': 15, 'min_samples_leaf': 4, 'min_samples_split': 2}"
+pca_MedicalHistoryScore,Random Forest,0.5645714285714286,0.104,0.09942812710584543,0.104,0.09538647445156737,"RandomForestClassifier(max_depth=10, min_samples_leaf=2, min_samples_split=5,
+                       n_estimators=200)","{'criterion': 'gini', 'max_depth': 10, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}"
+pca_MedicalHistoryScore,Gradient Boosting,0.9531428571428572,0.1,0.10023820359674053,0.1,0.09968338019583269,"GradientBoostingClassifier(max_depth=5, n_estimators=200)","{'max_depth': 5, 'n_estimators': 200}"
+pca_MedicalHistoryScore,KNN,0.9988571428571429,0.086,0.08580767765648363,0.086,0.08543604711316215,"KNeighborsClassifier(n_neighbors=7, weights='distance')","{'n_neighbors': 7, 'p': 2, 'weights': 'distance'}"
+pca_MedicalHistoryScore,MLP,0.112,0.08066666666666666,0.03618264138012848,0.08066666666666666,0.0440027679988506,"MLPClassifier(activation='logistic', alpha=0.001)","{'activation': 'logistic', 'alpha': 0.001, 'solver': 'adam'}"
+pca_MedicalHistoryScore,SVC,0.11114285714285714,0.098,0.026942258825076067,0.098,0.034498817733990154,"SVC(C=0.1, kernel='sigmoid')","{'C': 0.1, 'gamma': 'scale', 'kernel': 'sigmoid'}"
+pca_MedicalHistoryScore,XGBoost,0.33,0.10133333333333333,0.0996582228053239,0.10133333333333333,0.09880879813238241,"XGBClassifier(base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device=None, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=0.1, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=3, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=200, n_jobs=None,
+              num_parallel_tree=None, objective='multi:softprob', ...)","{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 200}"
+pca_PhysicalActivity,Logistic Regression,0.3537142857142857,0.34,0.11560000000000001,0.34,0.17253731343283585,"LogisticRegression(C=0.01, penalty='l1', solver='saga')","{'C': 0.01, 'penalty': 'l1', 'solver': 'saga'}"
+pca_PhysicalActivity,Decision Tree,0.3617142857142857,0.3313333333333333,0.1822530525030525,0.3313333333333333,0.17902688026320576,"DecisionTreeClassifier(criterion='entropy', max_depth=5, min_samples_split=10)","{'criterion': 'entropy', 'max_depth': 5, 'min_samples_leaf': 1, 'min_samples_split': 10}"
+pca_PhysicalActivity,Random Forest,0.4482857142857143,0.318,0.2967219330458408,0.318,0.24642759437395229,"RandomForestClassifier(criterion='entropy', max_depth=5, min_samples_leaf=2,
+                       min_samples_split=5)","{'criterion': 'entropy', 'max_depth': 5, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 100}"
+pca_PhysicalActivity,Gradient Boosting,0.9517142857142857,0.32133333333333336,0.3227216533215968,0.32133333333333336,0.3197446837086151,"GradientBoostingClassifier(max_depth=7, n_estimators=200)","{'max_depth': 7, 'n_estimators': 200}"
+pca_PhysicalActivity,KNN,1.0,0.32133333333333336,0.32331170618497335,0.32133333333333336,0.32070420116070264,"KNeighborsClassifier(n_neighbors=7, p=1, weights='distance')","{'n_neighbors': 7, 'p': 1, 'weights': 'distance'}"
+pca_PhysicalActivity,MLP,0.3537142857142857,0.34,0.11560000000000001,0.34,0.17253731343283585,"MLPClassifier(activation='logistic', alpha=0.001)","{'activation': 'logistic', 'alpha': 0.001, 'solver': 'adam'}"
+pca_PhysicalActivity,SVC,0.3537142857142857,0.34,0.11560000000000001,0.34,0.17253731343283585,"SVC(C=0.1, kernel='linear')","{'C': 0.1, 'gamma': 'scale', 'kernel': 'linear'}"
+pca_PhysicalActivity,XGBoost,0.392,0.322,0.3157734445916637,0.322,0.26120918064791626,"XGBClassifier(base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device=None, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=0.01, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=3, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=200, n_jobs=None,
+              num_parallel_tree=None, objective='multi:softprob', ...)","{'learning_rate': 0.01, 'max_depth': 3, 'n_estimators': 200}"
+pca_Smoker,Logistic Regression,0.5117142857142857,0.5073333333333333,0.25738711111111107,0.5073333333333333,0.34151319475158487,"LogisticRegression(C=0.01, penalty='l1', solver='saga')","{'C': 0.01, 'penalty': 'l1', 'solver': 'saga'}"
+pca_Smoker,Decision Tree,0.5302857142857142,0.5093333333333333,0.5108021670652331,0.5093333333333333,0.40306435177023414,"DecisionTreeClassifier(max_depth=5, min_samples_leaf=4)","{'criterion': 'gini', 'max_depth': 5, 'min_samples_leaf': 4, 'min_samples_split': 2}"
+pca_Smoker,Random Forest,0.602,0.504,0.5002440968115468,0.504,0.46610015850905423,"RandomForestClassifier(criterion='entropy', max_depth=5, min_samples_leaf=2,
+                       min_samples_split=10)","{'criterion': 'entropy', 'max_depth': 5, 'min_samples_leaf': 2, 'min_samples_split': 10, 'n_estimators': 100}"
+pca_Smoker,Gradient Boosting,0.9185714285714286,0.508,0.507568272276971,0.508,0.5072636764509376,"GradientBoostingClassifier(max_depth=7, n_estimators=200)","{'max_depth': 7, 'n_estimators': 200}"
+pca_Smoker,KNN,0.6685714285714286,0.4866666666666667,0.48647801127255746,0.4866666666666667,0.4865022831050228,KNeighborsClassifier(p=1),"{'n_neighbors': 5, 'p': 1, 'weights': 'uniform'}"
+pca_Smoker,MLP,0.5042857142857143,0.508,0.5058604256237407,0.508,0.47621253799392094,"MLPClassifier(activation='identity', alpha=0.01)","{'activation': 'identity', 'alpha': 0.01, 'solver': 'adam'}"
+pca_Smoker,SVC,0.5291428571428571,0.5006666666666667,0.49466699041699047,0.5006666666666667,0.4539308087275314,"SVC(C=0.1, gamma='auto')","{'C': 0.1, 'gamma': 'auto', 'kernel': 'rbf'}"
+pca_Smoker,XGBoost,0.5454285714285714,0.496,0.4876893933480651,0.496,0.4490632021923626,"XGBClassifier(base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device=None, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=0.01, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=3, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=100, n_jobs=None,
+              num_parallel_tree=None, random_state=None, ...)","{'learning_rate': 0.01, 'max_depth': 3, 'n_estimators': 100}"
