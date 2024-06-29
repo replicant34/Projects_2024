@@ -73,9 +73,21 @@ df <- df %>% select(vehicleSearch,
 # Transform policePrecinct feature
 df$policePrecinct <- as.factor(df$policePrecinct)
 
-install.packages("installr')
-library(installr)
-updateR()
+# install.packages("installr')
+# library(installr)
+# updateR()
+
+install.packages(c("partykit", "Formula"))
 
 install.packages("CHAID", repos = "https://R-Forge.R-project.org")
 library(CHAID)
+
+control <- chaid_control(minbucket = 1000, maxheight = 2)
+model <- chaid(vehicleSearch - .,
+               data = df,
+               control = control)
+
+plot(model)
+
+
+
