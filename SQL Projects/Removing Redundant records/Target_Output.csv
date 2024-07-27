@@ -1,0 +1,6 @@
+SKU_1,SKU_2,SKU_3,Quantity_1,Quantity_2,Quantity_3,ID,Sorted_ID,rn
+Milk,Bread,Eggs,1,2,1,MilkBreadEggs,BreadMilkEggs,1
+Bread,Milk,Eggs,1,2,1,BreadMilkEggs,BreadMilkEggs,2
+Milk,Bread,Potato,1,2,5,MilkBreadPotato,BreadMilkPotato,1
+Bread,Milk,Potato,5,3,1,BreadMilkPotato,BreadMilkPotato,2
+Pie,Juice,Eggs,5,7,6,PieJuiceEggs,JuicePieEggs,1
