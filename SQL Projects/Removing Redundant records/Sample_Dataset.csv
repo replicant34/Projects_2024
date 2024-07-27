@@ -1,0 +1,7 @@
+SKU_1,SKU_2,SKU_3,Quantity_1,Quantity_2,Quantity_3
+Milk,Bread,Eggs,1,2,1
+Bread,Milk,Eggs,1,2,1
+Milk,Bread,Potato,1,2,5
+Bread,Milk,Potato,5,3,1
+Oats,Eggs,,5,,7
+Pie,Juice,Eggs,5,7,6
